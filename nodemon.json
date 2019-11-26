@@ -1,0 +1,3 @@
+{   
+    "ignore": ["guest_accounts.json", "added_properties.json"] 
+}

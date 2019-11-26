@@ -1,0 +1,98 @@
+{
+  "properties": [
+    {
+      "meta": { "code": 200, "requestId": "5d4bed47531593002ca1c10e" },
+      "notifications": [
+        { "type": "notificationTray", "item": { "unreadCount": 0 } }
+      ],
+      "response": { "woes": [] }
+    },
+    {
+      "meta": { "code": 200, "requestId": "5d4bed67c53093002d379484" },
+      "notifications": [
+        { "type": "notificationTray", "item": { "unreadCount": 0 } }
+      ],
+      "response": {
+        "venue": {
+          "id": "5d4bed677b4f700008fa7cfa",
+          "name": "test",
+          "contact": {},
+          "location": {
+            "isFuzzed": true,
+            "lat": 51.627081, 
+            "lng": -1.443221,
+            "distance": 486,
+            "cc": "GB",
+            "country": "United Kingdom"
+          },
+          "canonicalUrl": "https://foursquare.com/v/test/5d4bed677b4f700008fa7cfa",
+          "categories": [
+            {
+              "id": "4bf58dd8d48988d103941735",
+              "name": "Home (private)",
+              "pluralName": "Homes (private)",
+              "shortName": "Home",
+              "icon": {
+                "prefix": "https://ss3.4sqi.net/img/categories_v2/building/home_",
+                "suffix": ".png"
+              },
+              "primary": true
+            }
+          ],
+          "verified": false,
+          "stats": {
+            "tipCount": 0,
+            "usersCount": 0,
+            "checkinsCount": 0,
+            "visitsCount": 0
+          },
+          "likes": { "count": 0, "groups": [] },
+          "like": false,
+          "dislike": false,
+          "ok": false,
+          "venueRatingBlacklisted": true,
+          "beenHere": {
+            "count": 0,
+            "unconfirmedCount": 0,
+            "marked": false,
+            "lastCheckinExpiredAt": 0
+          },
+          "specials": { "count": 0, "items": [] },
+          "photos": {
+            "count": 0,
+            "groups": [
+              {
+                "type": "checkin",
+                "name": "Friends' check-in photos",
+                "count": 0,
+                "items": []
+              }
+            ],
+            "summary": "No photos"
+          },
+          "reasons": { "count": 0, "items": [] },
+          "hereNow": { "count": 0, "summary": "Nobody here", "groups": [] },
+          "createdAt": 1565257063,
+          "tips": {
+            "count": 0,
+            "groups": [
+              {
+                "type": "following",
+                "name": "Tips from people you follow",
+                "count": 0,
+                "items": []
+              }
+            ]
+          },
+          "shortUrl": "https://4sq.com/2M6RqAa",
+          "timeZone": "Europe/London",
+          "listed": { "count": 0, "groups": [] },
+          "pageUpdates": { "count": 0, "items": [] },
+          "inbox": { "count": 0, "items": [] },
+          "venueChains": [],
+          "attributes": { "groups": [] }
+        }
+      }
+    },
+  ]
+}

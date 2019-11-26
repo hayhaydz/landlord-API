@@ -1,0 +1,2820 @@
+{
+	"info": {
+		"_postman_id": "5a253897-5a4b-4604-9b74-1c0baaae7424",
+		"name": "Landlord API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Asset Valuation",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/assets/5d4da39b32d5cc0008c83817/valuation",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"assets",
+						"5d4da39b32d5cc0008c83817",
+						"valuation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asset Owners",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/assets/4c64440539732d7fe648d4fe/owners",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"assets",
+						"4c64440539732d7fe648d4fe",
+						"owners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assets Nearby",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"location\": {\n        \"lat\": 53.3761842057458,\n        \"lon\": -1.4696403762407613\n    },\n    \"query\": \"house\"\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/assets/nearby",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"assets",
+						"nearby"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assets Buy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "EAAJoICyMBvgBALU93i0sZCZAaB1wrznM73keibLzyEFqDXJTpJTnZCeeSML7jhwVdn07xPTYPFFZCWa9C2D1hJDzfnizolODBdB7SsNhKmh5nJJQchhV2LA39Ke88R43C1fVSDOg01sp27JuzVyvKFgYFo9Vv9tJCmDqw08a4YJkzEm7jEEf2vwbDEfvSio2jveoOC9iiWbolq2tLc4l"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d250851d8192b00018158f3"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/assets/5d249fab38c7d60024d5561b/buy/1000",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"assets",
+						"5d249fab38c7d60024d5561b",
+						"buy",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asset Complete",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "EAAJoICyMBvgBAKNgMF2TGd9g6JA3dBXtWpwQXZCz2Plstm3a9EDSX8CRHyfIcOyHbb5y9rJcD3P5v1LeKwUlACB7OdvmG1gZAMzHwT0r7Kq6pW8pLBcMnjk5eyE1ccYyntF2r5dcXxzPxEd5Vhy0lj2gWgbiRfCQdEYvnHPCtPkJZAtfGEZCbNglZB9lALFAsCOTuzbAVZA6ZB0PN2ZA4GQXbXBBOLph6ZBcZD"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d1b54175512aa0001ad55fa"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/assets/5d1fc0a1e7e5fc00238b45ee/complete",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"assets",
+						"5d1fc0a1e7e5fc00238b45ee",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Marketplace",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/marketplace",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"marketplace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Friend Competition",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/competitors/competition?criteria=assets",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"competitors",
+						"competition"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "assets"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Local Competition",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/competitors/local?criteria=cash",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"competitors",
+						"local"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "cash"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "National Competition",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/competitors/national?criteria=assets",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"competitors",
+						"national"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "assets"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Global Competition",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/competitors/league?criteria=assets",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"competitors",
+						"league"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "assets"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Friend Search",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Illustrious_M\"\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/competitors/search",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"competitors",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Friend Add",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/competitors/add/586a560384cede4b1f1596fe",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"competitors",
+						"add",
+						"586a560384cede4b1f1596fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Player Portfolio",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/players/5ce98b1648f8a60001d8be6a/portfolio",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"players",
+						"5ce98b1648f8a60001d8be6a",
+						"portfolio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ads Reward",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-G930K Build/NRD90M)"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5cf58a7142eba4000132ed5f",
+						"disabled": true
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "N1OJKMRWS4PGUCJGQNCRZF2MGOXSVW0O5033MAR13KIC4NHI",
+						"disabled": true
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141",
+						"disabled": true
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1",
+						"disabled": true
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android",
+						"disabled": true
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon",
+						"disabled": true
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/video-ads/appodeal",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"video-ads",
+						"appodeal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Offer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "56e3cc4ee4b02652b433c8be"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/estateagent/offers",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"estateagent",
+						"offers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asset Testing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/assets/config",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"assets",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Video Ads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/video-ads/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"video-ads",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Landlord testing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5cf58a7142eba4000132ed5f"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/buy",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activites",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5cf58a7142eba4000132ed5f"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "N1OJKMRWS4PGUCJGQNCRZF2MGOXSVW0O5033MAR13KIC4NHI"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/activities/since/1561976259859",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"activities",
+						"since",
+						"1561976259859"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guest Signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/register_anonymous",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"register_anonymous"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land get tiles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lat\": 51.022581,\n    \"lon\": -3.10325,\n    \"player_id\": \"5d051234cbff2700016df755\",\n    \"player_lat\": 51.022581,\n    \"player_lon\": -3.10325,\n    \"span\": 24\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/get_tiles",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"get_tiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land Offers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"player_id\":\"590f629884ce5f666266513e\"\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/offers_received",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"offers_received"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land Kings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"left_lat\": -83.11107328849802,\n    \"left_lon\": -94.92190584540369,\n    \"player_id\": \"5d051234cbff2700016df755\",\n    \"right_lat\": 83.11106987024894,\n    \"right_lon\": 94.92183409631254,\n    \"zoom\": 5\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/get_kings",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"get_kings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land Portfolio",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d051234cbff2700016df755"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"count\": 300,\n    \"left_lat\": 51.098205670403814,\n    \"left_lon\": -0.47448612749576563,\n    \"offset\": 0,\n    \"player_id\": \"57c46f48e4b0a231ce009527\",\n    \"right_lat\": 51.938327583101625,\n    \"right_lon\": 0.32145503908395767\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/get_portfolio",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"get_portfolio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land Reject Offer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "56e3cc4ee4b02652b433c8be"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "N1OJKMRWS4PGUCJGQNCRZF2MGOXSVW0O5033MAR13KIC4NHI"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"action\": \"reject\",\n    \"col\": 0,\n    \"counter_price\": 0,\n    \"offer_id\": 8834,\n    \"row\": 0,\n    \"type\": \"offer\"\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/offer_action",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"offer_action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land accept offer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5cf58a7142eba4000132ed5f"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "N1OJKMRWS4PGUCJGQNCRZF2MGOXSVW0O5033MAR13KIC4NHI"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"action\": \"accept\",\n    \"col\": 0,\n    \"counter_price\": 0,\n    \"offer_id\": 9536,\n    \"row\": 0,\n    \"type\": \"offer\"\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/offer_action",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"offer_action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land Buy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "56e3cc4ee4b02652b433c8be"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"col\": 197389,\n    \"currency\": \"cash\",\n    \"player_id\": \"56e3cc4ee4b02652b433c8be\",\n    \"player_lat\": 51.1929083,\n    \"player_lon\": -2.6380717,\n    \"row\": 266863\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/buy",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Land Sell",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "56e3cc4ee4b02652b433c8be"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.8.1"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"col\": 197389,\n    \"player_id\": \"56e3cc4ee4b02652b433c8be\",\n    \"row\": 266863\n}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/bl/api/v1.0/sell",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"bl",
+						"api",
+						"v1.0",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test foursquare api fake",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://foursquare.com/oauth2/access_token?client_id=YQHN4QP2CYQJOLWZ031VTHS0EIBQ23CHLHTEPDJENIJPEQUM&client_secret=33DKD5HMM30GAGTJ2J3ILGOW1RUV0H2WPD1K3YCZ32X4XVBF&grant_type=authorization_code&code=QF3IFHJHWN1F3EUKDWR4D1O03CDMMHBNDRU5BKPY5214QG1O",
+					"protocol": "https",
+					"host": [
+						"foursquare",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"access_token"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "YQHN4QP2CYQJOLWZ031VTHS0EIBQ23CHLHTEPDJENIJPEQUM"
+						},
+						{
+							"key": "client_secret",
+							"value": "33DKD5HMM30GAGTJ2J3ILGOW1RUV0H2WPD1K3YCZ32X4XVBF"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code"
+						},
+						{
+							"key": "code",
+							"value": "QF3IFHJHWN1F3EUKDWR4D1O03CDMMHBNDRU5BKPY5214QG1O"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "2.1.0"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/register",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/health",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/authenticate",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Testing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod",
+						"disabled": true
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon",
+						"disabled": true
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android",
+						"disabled": true
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141",
+						"disabled": true
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK",
+						"disabled": true
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "5d3e069848f8a6000140f3a3",
+						"disabled": true
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "bob"
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/video-ads/appodeal?data1=1&data2=2",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"video-ads",
+						"appodeal"
+					],
+					"query": [
+						{
+							"key": "data1",
+							"value": "1"
+						},
+						{
+							"key": "data2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Anonymously",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "prod",
+						"disabled": true
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon",
+						"disabled": true
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141",
+						"disabled": true
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK",
+						"disabled": true
+					},
+					{
+						"key": "x-user-id",
+						"type": "text",
+						"value": "bob",
+						"disabled": true
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": "admin"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"player\": {\"id\": \"bob\"}}"
+				},
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/register_anonymous",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"register_anonymous"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Player Self",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-app-flavor",
+						"type": "text",
+						"value": "beta"
+					},
+					{
+						"key": "x-app-id",
+						"type": "text",
+						"value": "com.landlordgame.tycoon"
+					},
+					{
+						"key": "x-app-platform",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "x-app-version",
+						"type": "text",
+						"value": "0"
+					},
+					{
+						"key": "x-app-version-code",
+						"type": "text",
+						"value": "141"
+					},
+					{
+						"key": "x-fs-token",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Android"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en_UK"
+					},
+					{
+						"key": "x-coordinates",
+						"type": "text",
+						"value": "50.4840983,-3.914985",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.wearerealitygames.com/landlord/players/self",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wearerealitygames",
+						"com"
+					],
+					"path": [
+						"landlord",
+						"players",
+						"self"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foursquare Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "bbhive=FSYXLSNTDFS0GJMQT05UVQSDAGHDSN%3A%3A1625482881; oauth_token=5PWUXZGGB5CLDK5LZQ1YDJQEHN2VFF3ROHINNUDZMR4PCLVP-0; ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "fs-request-signature=e645a314beefd5d52e9dc2abb6bfdb68e19ee4a6:1565253929691&shouldAuthorize=true"
+				},
+				"url": {
+					"raw": "https://foursquare.com/oauth2/authenticate?client_id=YQHN4QP2CYQJOLWZ031VTHS0EIBQ23CHLHTEPDJENIJPEQUM&response_type=code&container=android&androidKeyHash=C4%3A38%3A69%3A0B%3AB8%3A20%3A1B%3ACF%3ACA%3A2D%3A54%3A76%3AA2%3AA7%3AAD%3A0B%3AB5%3AE9%3A7C%3ACA",
+					"protocol": "https",
+					"host": [
+						"foursquare",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"authenticate"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "YQHN4QP2CYQJOLWZ031VTHS0EIBQ23CHLHTEPDJENIJPEQUM"
+						},
+						{
+							"key": "response_type",
+							"value": "code"
+						},
+						{
+							"key": "container",
+							"value": "android"
+						},
+						{
+							"key": "androidKeyHash",
+							"value": "C4%3A38%3A69%3A0B%3AB8%3A20%3A1B%3ACF%3ACA%3A2D%3A54%3A76%3AA2%3AA7%3AAD%3A0B%3AB5%3AE9%3A7C%3ACA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Landlord Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.foursquare.com/v2/venues/categories?locale=en&explicit-lang=false&cc=GB&oauth_token=Q2OT3J1EIEVSLBOB3XOGMYBK5I4XU0WONVP4PEDC0F1JTWFX&v=20190808",
+					"protocol": "https",
+					"host": [
+						"api",
+						"foursquare",
+						"com"
+					],
+					"path": [
+						"v2",
+						"venues",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "locale",
+							"value": "en"
+						},
+						{
+							"key": "explicit-lang",
+							"value": "false"
+						},
+						{
+							"key": "cc",
+							"value": "GB"
+						},
+						{
+							"key": "wsid",
+							"value": "FSYXLSNTDFS0GJMQT05UVQSDAGHDSN",
+							"disabled": true
+						},
+						{
+							"key": "oauth_token",
+							"value": "Q2OT3J1EIEVSLBOB3XOGMYBK5I4XU0WONVP4PEDC0F1JTWFX"
+						},
+						{
+							"key": "v",
+							"value": "20190808"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Landlord Flag a property",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "oauth_token=NMU1I44YOLVC5OMHVVEMFVMRRRAPTL42RF2TJ31R1L5D1JL5&problem=other&comment=asd&v=20160528"
+				},
+				"url": {
+					"raw": "https://api.foursquare.com/v2/venues/5d4d990b48faba00080c76fb/flag",
+					"protocol": "https",
+					"host": [
+						"api",
+						"foursquare",
+						"com"
+					],
+					"path": [
+						"v2",
+						"venues",
+						"5d4d990b48faba00080c76fb",
+						"flag"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

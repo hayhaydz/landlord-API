@@ -1,0 +1,26 @@
+html
+    head
+        title Welcome!
+    body
+        p username: #{username}
+        a(href="welcome/add_venue/") Add a prop
+        br
+        a(href="welcome/edit_venue/") Edit a prop
+        br
+        a(href="welcome/multiple_venues/") Multiple Venues
+        br
+        a(href="welcome/coin_properties/") Buying a property with coins
+        //- br
+        //- a(href="search/") Search for a prop
+        //- br
+        //- a(href="details/") Get details of a prop
+        //- br
+        //- a(href="claim/") Claim a prop
+        //- br
+        //- a(href="categories/") View all categories available for props
+        //- br
+        //- a(href="like_checkin/") Like a checkin
+        script.
+                var data = !{data}
+                console.log(data);
+                console.log(data.response.user.firstName);

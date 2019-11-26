@@ -1,0 +1,120 @@
+- API DOMAIN -
+	https://api.wearerealitygames.com
+
+
+- API ENDPOINTS -
+
+	*LANDLORD USER ID* - Example: 5d051234cbff2700016df755
+	*FOURSQUARE VENUE ID* - Example: 5d28d4c0abc6ee00235a111e
+
+	POST | /landlord/assets/nearby
+	GET  | /landlord/assets/*FOURSQUARE VENUE ID*/valuation
+	GET  | /landlord/assets/*FOURSQUARE VENUE ID*/owners
+	GET  | /landlord/assets/*FOURSQUARE VENUE ID*/buy/10
+	GET  | /landlord/assets/*FOURSQUARE VENUE ID*/upgrades
+	GET  | /landlord/assets/*FOURSQUARE VENUE ID*/sell/
+	GET  | /landlord/assets/*FOURSQUARE VENUE ID*/complete
+
+	GET  | /landlord/marketplace
+	GET  | /landlord/marketplace/ask/*FOURSQUARE VENUE ID*/1
+
+	POST | /landlord/register
+	POST | /landlord/register_anonymous
+	POST | /landlord/authenticate
+	POST | /landlord/health
+	POST | /landlord/buy
+	GET  | /landlord/activities/since/1561976259859 - Epoch Time
+	GET  | /landlord/venues/0000000000000000000000IS - Major countries ID - Different to Foursquare venue ID
+
+	GET  | /landlord/estateagent/offers
+	POST | /landlord/estateagent/offer
+		{"seller":"*LANDLORD USER ID*","venueId":"*FOURSQUARE VENUE ID*","share":1.0,"amount":400000000000}
+	POST | /landlord/estateagent/accept
+		{"buyer":"*LANDLORD USER ID*","venueId":"*FOURSQUARE VENUE ID*"}
+	POST | /landlord/estateagent/counteroffer
+		{"buyer":"*LANDLORD USER ID*","demandedMoney":500000,"venueId":"*FOURSQUARE VENUE ID*"}
+	POST | /landlord/estateagent/counteroffer/accept
+		{"seller":"*LANDLORD USER ID*","venueId":"*FOURSQUARE VENUE ID*"}
+
+	GET  | /landlord/players/self
+	GET  | /landlord/players/self/portfolio
+	GET  | /landlord/players/*LANDLORD USER ID*/portfolio
+	GET  | /landlord/players/*LANDLORD USER ID*/portfolio/count
+
+	GET  | /landlord/competitors/competition?criteria=assets
+	GET  | /landlord/competitors/local?criteria=assets
+	GET  | /landlord/competitors/national?criteria=assets
+	GET  | /landlord/competitors/league?criteria=assets
+	POST | /landlord/competitors/search
+	GET  | /landlord/competitors/add/*LANDLORD USER ID*
+	GET  | /landlord/competitors/remove/*LANDLORD USER ID*
+
+
+- BUY LAND ENDPOINTS - 
+
+	POST | /bl/api/v1.0/get_kings
+		{"left_lat":*REMOVED BECAUSE SENSITIVE*,"left_lon":*REMOVED BECAUSE SENSITIVE*,"player_id":"*LANDLORD USER ID*","right_lat":*REMOVED BECAUSE SENSITIVE*,"right_lon":*REMOVED BECAUSE SENSITIVE*,"zoom":5}
+	POST | /bl/api/v1.0/get_shapes
+		{"centroid_only":0,"mx":0,"shapes_ids":["9436","13132","12960","13010","11040"],"simplify":100}
+	POST | /bl/api/v1.0/get_tiles
+		{"lat":*REMOVED BECAUSE SENSITIVE*,"lon":*REMOVED BECAUSE SENSITIVE*,"player_id":"*LANDLORD USER ID*","player_lat":*REMOVED BECAUSE SENSITIVE*,"player_lon":*REMOVED BECAUSE SENSITIVE*,"span":8}
+	POST | /bl/api/v1.0/get_portfolio
+		{"count":300,"left_lat":*REMOVED BECAUSE SENSITIVE*,"left_lon":*REMOVED BECAUSE SENSITIVE*,"offset":0,"player_id":"*LANDLORD USER ID*","right_lat":*REMOVED BECAUSE SENSITIVE*,"right_lon":*REMOVED BECAUSE SENSITIVE*}
+	POST | /bl/api/v1.0/buy
+		{"col":*REMOVED BECAUSE SENSITIVE*,"currency":"cash","player_id":"*LANDLORD USER ID*","player_lat":*REMOVED BECAUSE SENSITIVE*,"player_lon":*REMOVED BECAUSE SENSITIVE*,"row":*REMOVED BECAUSE SENSITIVE*}
+	POST | /bl/api/v1.0/sell
+		{"col":*REMOVED BECAUSE SENSITIVE*,"player_id":"*LANDLORD USER ID*","row":*REMOVED BECAUSE SENSITIVE*}
+	POST | /bl/api/v1.0/offer_action -- MAKING OFFER                    This is a scientific notation  
+		{"action":"place","col":*REMOVED BECAUSE SENSITIVE*,"offer_price":8.0E10,"player_id":"*LANDLORD USER ID*","player_lat":*REMOVED BECAUSE SENSITIVE*,"player_lon":*REMOVED BECAUSE SENSITIVE*,"row":*REMOVED BECAUSE SENSITIVE*}
+	POST | /bl/api/v1.0/offers_received
+		{"player_id":"*LANDLORD USER ID*"}
+	POST | /bl/api/v1.0/offer_action -- ACCEPTING OFFER
+		{"action":"accept","col":0,"counter_price":0,"offer_id":8834,"row":0,"type":"offer"}
+
+
+ - OTHER ENDPOINTS -
+
+	GET  | /landlord/video-ads/appodeal?data1=54281AF0F3E4EBB47C8C17A68142F3A9&data2=EA45741FC85272B4F1AC20FC54EABB3AFC3FD1C08F573409198BC3C01F821495F3691096EDBB04B87CD92F8C97FFFC56943F9519B610DBE3DFC0A8DE5F02063AEF59B3A05E0B375B3D982CE7D59AFE518F87F7D36E2F2085587BA4A6241E0217EA0AA2B49159D60CEB009C23B3EC0716EF73A85F57888197F5BE5739758E8CB621023620D5B9514997AFED99C07592AFF2A3A1DA94CFA37C431277C3C46892EC563263C2EC08011CC059421AB31975B0A36E5D07625F333E75C6CF2F102436E3
+	GET  | /landlord/video-ads/status
+
+	GET  | /landlord/referralv2/referral/list/*LANDLORD USER ID*
+	POST | /landlord/referralv2/referral/new
+		{"referralId":"2019-07-28T23:01:46.52","referrer":"*LANDLORD USER ID*"}
+	POST | /landlord/referralv2/referral/use
+
+
+- HEADER PARAMETERS -
+	x-app-flavor: prod
+	x-app-id: com.landlordgame.tycoon
+	x-app-platform: Android
+	x-app-version: 2.8.1
+	x-app-version-code: 141
+	x-coordinates:
+	x-fs-token:
+	x-realm:
+	x-user-id:
+
+
+- USER ACCOUNT DETAILS -
+	-prop checker-
+	x-user-id: 5d051234cbff2700016df755
+	x-fs-token: YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV
+
+
+- AUTOMATION - 
+	1. Register Guest account
+	2. Buy Property
+	3. Bank account makes offer for property of 400b
+	4. Guest account accepts offer
+	5. Create properties
+	6. Guest account valuates properties
+	7. Guest account buys properties
+	8. Guest account completes properties paperwork
+	9. Guest account lists properties on marketplace at certain percentage
+
+
+- TESTING SHADY AUTHENTICATION - 
+	1. GET foursquare.com/oauth2/authenticate?client_id=YQHN4QP2CYQJOLWZ031VTHS0EIBQ23CHLHTEPDJENIJPEQUM&response_type=code&container=android&androidKeyHash=C4%3A38%3A69%3A0B%3AB8%3A20%3A1B%3ACF%3ACA%3A2D%3A54%3A76%3AA2%3AA7%3AAD%3A0B%3AB5%3AE9%3A7C%3ACA
+	2. GET foursquare.com/oauth2/access_token?client_id=YQHN4QP2CYQJOLWZ031VTHS0EIBQ23CHLHTEPDJENIJPEQUM&client_secret=33DKD5HMM30GAGTJ2J3ILGOW1RUV0H2WPD1K3YCZ32X4XVBF&grant_type=authorization_code&code=ZS03DPRBRDJ2PDYF0IROXHEODKJMDLFXPCKE2DQ5WWAL2L2H
+		Response: access_token=YWRNFU4PJAZBAE33CKP1GVCPAIFER5GPN2VDENGNNA1ON3PV
+	3. POST api.wearerealitygames.com/landlord/register

@@ -1,0 +1,68 @@
+html
+    head
+        title Home
+    body
+        //- a(href=`https://foursquare.com/oauth2/authenticate?client_id=${clientID}&response_type=code&redirect_uri=http://localhost:8080/oauth/redirect`) Login with Foursquare
+        //- a(href=`https://foursquare.com/oauth2/authenticate?client_id=YQHN4QP2CYQJOLWZ031VTHS0EIBQ23CHLHTEPDJENIJPEQUM&response_type=code&container=android&androidKeyHash=C4%3A38%3A69%3A0B%3AB8%3A20%3A1B%3ACF%3ACA%3A2D%3A54%3A76%3AA2%3AA7%3AAD%3A0B%3AB5%3AE9%3A7C%3ACA`, target="_blank", onClick="clickedFoursquareLogin()") Login with Foursquare
+        a(href="oauth/new/") Login with Foursquare
+        br
+        a(href="coin_make_multiple_offers/") Making multiple offers for the coin property
+        br
+        a(href="accept_multiple_offers/") Accepting multiple landlord offers
+        br
+        a(href="transfer_cash/") Transfer guest accounts cash
+        br
+        a(href="landlord_api/") Testing landlord API
+        br
+        a(href="searching_high_value_tiles/") Search for high value tiles
+        br
+        a(href="testing_landlord_api/") Testing Landlord api
+
+        script.
+            function clickedFoursquareLogin() {
+                captureNetworkRequest();
+            }
+
+            function captureNetworkRequest() {
+                // Check for support of the PerformanceResourceTiming.*size properties and print their values
+                // if supported.
+                if (performance === undefined) {
+                    console.log("= Display Size Data: performance NOT supported");
+                    return;
+                }
+
+                var list = performance.getEntriesByType("resource");
+                if (list === undefined) {
+                    console.log("= Display Size Data: performance.getEntriesByType() is  NOT supported");
+                    return;
+                }
+
+                // Use getEntriesByType() to just get the "resource" events
+                var p = performance.getEntriesByType("resource");
+                console.log(p);
+                for (var i=0; i < p.length; i++) {
+                    print_initiatorType(p[i]);
+                }
+
+                function print_initiatorType(perfEntry) {
+                // Print this performance entry object's initiatorType value
+                var value = "initiatorType" in perfEntry;
+                if (value)
+                    console.log("... initiatorType = " + perfEntry.initiatorType);
+                else
+                    console.log("... initiatorType = NOT supported");
+                }
+
+                //- var capture_network_request = [];
+                //- var capture_resource = performance.getEntriesByType("resource");
+                //- console.log(performance.getEntriesByType("resource"));
+                //- for (var i = 0; i < capture_resource.length; i++) {
+                //-     if (capture_resource[i].initiatorType == "xmlhttprequest" || capture_resource[i].initiatorType == "script" || capture_resource[i].initiatorType == "img") {
+                //-         if (capture_resource[i].name.indexOf('www.demo.com OR YOUR URL') > -1) {
+                //-             capture_network_request.push(capture_resource[i].name)
+                //-         }
+                //-     }
+                //- }
+                //- return capture_newtwork_request;
+                
+            }
