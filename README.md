@@ -1,5 +1,5 @@
 # landlord-API
-If you find any of this information helpful or just appreciate the work that I've done please feel free to buy me a coffee!
+If you find any of this information helpful or just appreciate the work that I've done please feel free to [buy me a coffee!](https://www.buymeacoffee.com/hayhaydz)
 
  It's an express server.
  
