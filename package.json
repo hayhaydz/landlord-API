@@ -14,7 +14,7 @@
     "fs": "^0.0.1-security",
     "node-foursquare": "^0.4.6",
     "nodemon": "^1.19.4",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "real-random-address": "^1.1.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.5"
